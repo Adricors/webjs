@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página de plantas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="contenedor-header">
+            <h1>Plantas para decoración</h1>
+
+            <button id="btnMenu" class="btn-menu">☰</button>
+        </div>
+
+        <p>Un poco sobre las plantas decorativas</p>
+
+        <nav id="menu" class="navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#plantas">Plantas</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <img class="banner" src="../imagenes/banner.jpg" alt="Plantas decorativas">
+
+    <main id="contenido">
+
+        <section id="inicio">
+            <h2 id="mensaje">Bienvenido</h2>
+            <button id="btnCambiar">Cambiar mensaje</button>
+        </section>
+
+        <section id="plantas">
+            <h2>Plantas que resaltan</h2>
+
+            <div class="plantas">
+
+                <div class="planta">
+                    <img src="../imagenes/cactus.jpg" alt="Cactus">
+                    <h3>Cactus</h3>
+                    <p>Es una planta que necesita poca agua.</p>
+                </div>
+
+                <div class="planta">
+                    <img src="../imagenes/girasol.jpg" alt="Girasol">
+                    <h3>Girasol</h3>
+                    <p>Es una planta conocida por su color amarillo.</p>
+                </div>
+
+                <div class="planta">
+                    <img src="../imagenes/helecho.jpg" alt="Helecho">
+                    <h3>Helecho</h3>
+                    <p>Es una planta que crece en lugares húmedos.</p>
+                </div>
+
+                <div class="planta">
+                    <img src="../imagenes/orquidea.jpg" alt="Orquídea">
+                    <h3>Orquídea</h3>
+                    <p>Es una planta delicada que necesita luz indirecta.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="nosotros" class="nosotros">
+            <img src="../imagenes/cuidados.jpg" alt="Cuidado de plantas">
+
+            <div>
+                <h2>Sobre nosotros</h2>
+                <p>Esta página está dedicada a compartir información básica sobre plantas decorativas y sus cuidados.</p>
+                <p>Buscamos que cualquier persona pueda elegir la planta que mejor se adapte a su espacio.</p>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <form id="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre">
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" placeholder="ejemplo@correo.com">
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <p id="resultado"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Página sobre plantas</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+body {
+    font-family: Arial;
+    background-color: #eaf5e5;
+    margin: 0;
+}
+
+header {
+    background-color: #7caf68;
+    text-align: center;
+    padding: 20px;
+}
+
+.contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Botón del menú */
+.btn-menu {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Navegación */
+.navegacion {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navegacion a:hover {
+    text-decoration: underline;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+#contenido {
+    padding: 20px;
+}
+
+#inicio {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Flexbox */
+.plantas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Clase */
+.planta {
+    background-color: white;
+    border: 2px solid green;
+    padding: 15px;
+    width: 200px;
+}
+
+/* Imagen */
+.planta img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Pseudoclase */
+.planta:hover {
+    background-color: #d8efd0;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* Sección nosotros */
+.nosotros {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.nosotros img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Formulario */
+#contacto {
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contacto input {
+    padding: 8px;
+    border: 1px solid #7caf68;
+    border-radius: 5px;
+}
+
+#contacto button {
+    padding: 10px;
+    background-color: #4f7b3d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resultado {
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #4f7b3d;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+/* Diseño responsivo */
+@media (max-width: 600px) {
+
+    .btn-menu {
+        display: block;
+    }
+
+    .navegacion {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navegacion.mostrar {
+        display: flex;
+    }
+
+    .plantas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .planta {
+        width: 80%;
+    }
+
+    .nosotros {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nosotros img {
+        width: 100%;
+    }
+}
